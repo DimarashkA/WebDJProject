@@ -3,10 +3,10 @@ from django.http import HttpResponse
 
 # Create your views here.
 def index(request):
-    return HttpResponse("<h1>Это мой первый проект на Django</h1>")
+    return render(request, "main\index.html")
 
 def data(request):
-    return HttpResponse("<h1>Это вторая станица моего проекта на Django</h1>")
+    return render(request, "main\data.html")
 
 def test(request):
-    return HttpResponse("<h1>Это третья станица моего проекта на Django</h1>")
+    return render(request, "main/test.html")

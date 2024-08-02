@@ -1,10 +1,22 @@
 {% extends "main\layoute.html" %}
 
 {% block title %}
-    <title>Первая страница на django</title>
+    <title>Главная страница</title>
 {% endblock %}
 
 {% block content %}
-    
-    <h1>Урок номер 1 по изучению фреймворка django</h1>
+<div class="text-center mt-5">
+    <h1 class="display-4">Добро пожаловать в BRIL LE!</h1>
+    <p class="lead mt-4">Ваш окончательный выбор стильных и качественных футляров для очков. Мы предлагаем широкий ассортимент продукции для защиты и украшения ваших очков.</p>
+    <hr class="my-4">
+    <p>Ключевые преимущества:</p>
+    <ul class="list-unstyled">
+        <li><i class="fas fa-check-circle text-success"></i> Высококачественные материалы.</li>
+        <li><i class="fas fa-check-circle text-success"></i> Уникальный дизайн.</li>
+        <li><i class="fas fa-check-circle text-success"></i> Огромный выбор цветов.</li>
+        <li><i class="fas fa-check-circle text-success"></i> Быстрая и надежная доставка.</li>
+        <li><i class="fas fa-check-circle text-success"></i> Гарантия на всю продукцию.</li>
+    </ul>
+    <p class="mt-4">Изучите наш <a href="{% url 'data' %}">каталог</a> и найдите идеальный футляр для ваших очков уже сегодня!</p>
+</div>
 {% endblock %}

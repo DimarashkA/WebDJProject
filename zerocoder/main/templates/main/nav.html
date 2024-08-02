@@ -1,6 +1,6 @@
-<ul>
-    <li><a href=""> Главная страница </a></li>
-    <li><a href=""> Первая страница </a></li>
-    <li><a href=""> Вторая страница </a></li>
-    <li><a href=""> Третья страница </a></li>
-<ul>
+<nav class="nav flex-column">
+    <a class="nav-link" href="{% url 'index' %}">Главная</a>
+    <a class="nav-link" href="{% url 'data' %}">Каталог</a>
+    <a class="nav-link" href="{% url 'test' %}">Отзывы</a>
+    <a class="nav-link" href="{% url 'new' %}">Новинки</a>
+</nav>

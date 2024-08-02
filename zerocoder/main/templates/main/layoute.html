@@ -23,11 +23,11 @@
             <aside class="col-md-2 bg-light sidebar p-4 text-center">
                 <img src="{% static 'main/img/photo_1.jpg' %}" alt="девушка в очках" class="img-fluid rounded-circle mb-3" width="150px">
                 <h2 class="h5">BRIL LE</h2>
+                {% include "main/nav.html" %}
             </aside>
 
             <!-- Main content -->
             <div class="col-md-10">
-                {% include "main/nav.html" %}
                 <main class="p-4">
                     {% block content %}
                     {% endblock %}

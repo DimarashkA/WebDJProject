@@ -17,6 +17,9 @@
     {% endblock %}
 </head>
 <body>
+    <!-- Include Header -->
+    {% include 'main/header.html' %}
+
     <div class="container-fluid">
         <div class="row">
             <!-- Sidebar -->
@@ -36,9 +39,13 @@
         </div>
     </div>
 
+    <!-- Include Footer -->
+    {% include 'main/footer.html' %}
+
     <!-- Bootstrap JS and dependencies -->
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
 </body>
 </html>
+

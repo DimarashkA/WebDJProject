@@ -1,3 +1,63 @@
-body{
-    background-color: rgb(120, 83, 163);
+/* main/css/main.css */
+
+/* Общие стили */
+body {
+    background-color: #f8f9fa; /* Светлый фон */
+}
+
+/* Стили для боковой панели */
+.sidebar {
+    min-height: 100vh; /* Полная высота */
+}
+
+.sidebar .h5 {
+    font-weight: bold;
+    color: #333;
+}
+
+/* Стили для основного контента */
+main {
+    background-color: white;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    margin-top: 20px;
+}
+
+.footer {
+    background-color: #343a40; /* Темный цвет фона */
+    color: white; /* Белый цвет текста */
+    padding: 20px 0; /* Отступы сверху и снизу */
+}
+
+.footer h5 {
+    font-size: 18px;
+    margin-bottom: 15px;
+}
+
+.footer p, .footer ul {
+    font-size: 14px;
+    line-height: 1.5;
+}
+
+.footer ul {
+    padding-left: 0;
+    list-style: none;
+}
+
+.footer ul li {
+    margin-bottom: 10px;
+}
+
+.footer ul.list-inline {
+    margin: 0;
+}
+
+.footer ul.list-inline li {
+    display: inline-block;
+    margin-right: 10px;
+}
+
+.footer .fa-heart {
+    color: red; /* Цвет сердечка */
 }

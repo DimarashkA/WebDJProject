@@ -5,23 +5,47 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+    <!-- Bootstrap CSS -->
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Custom CSS -->
     <link rel="stylesheet" href="{% static 'main/css/main.css' %}">
 
     {% block title %}
+    <title>Ваш Сайт</title>
     {% endblock %}
 </head>
-
 <body>
-    <aside>
-        <img src="{% static 'main/img/photo_1.jpg' %}" alt="девушка в очках" width="150px">
-        <span>BRIL LE</span>
-        <ul></ul>
-            <li><a href="">Главная</a></li>
-            <li><a href="">Второстепенная</a></li>
-    </aside>
+    <!-- Include Header -->
+    {% include 'main/header.html' %}
 
-    {% include "main/nav.html" %}
-    {% block content %}
-    {% endblock %}
+    <div class="container-fluid">
+        <div class="row">
+            <!-- Sidebar -->
+            <aside class="col-md-2 bg-light sidebar p-4 text-center">
+                <img src="{% static 'main/img/photo_1.jpg' %}" alt="девушка в очках" class="img-fluid rounded-circle mb-3" width="150px">
+                <h2 class="h5">BRIL LE</h2>
+                {% include "main/nav.html" %}
+            </aside>
+
+            <!-- Main content -->
+            <div class="col-md-10">
+                <main class="p-4">
+                    {% block content %}
+                    {% endblock %}
+                </main>
+            </div>
+        </div>
+    </div>
+
+    <!-- Include Footer -->
+    {% include 'main/footer.html' %}
+
+    <!-- Bootstrap JS and dependencies -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
 </body>
 </html>
+
